@@ -11,7 +11,7 @@ export class KyButton extends LitElement {
 
   override render() {
     return html`<button>
-      <slot><span>fallback text</span></slot>
+      <slot>fallback text</slot>
     </button>`
   }
 }

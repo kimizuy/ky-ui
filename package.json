@@ -1,19 +1,24 @@
 {
-  "name": "ky-ui",
-  "version": "1.0.0",
-  "main": "index.js",
-  "license": "MIT",
+  "name": "vite-lit-ts",
+  "version": "0.0.0",
+  "main": "dist/ky-button.es.js",
+  "exports": {
+    ".": "./dist/ky-button.es.js"
+  },
+  "types": "types/ky-button.d.ts",
+  "files": [
+    "dist",
+    "types"
+  ],
   "scripts": {
-    "build": "tsc",
-    "build:watch": "tsc --watch",
-    "serve": "wds --node-resolve --watch"
+    "dev": "vite",
+    "build": "tsc && vite build"
   },
   "dependencies": {
     "lit": "^2.0.2"
   },
   "devDependencies": {
-    "@web/dev-server": "^0.1.29",
-    "@webcomponents/webcomponentsjs": "^2.6.0",
-    "typescript": "^4.5.4"
+    "vite": "^2.7.2",
+    "typescript": "^4.4.4"
   }
 }
